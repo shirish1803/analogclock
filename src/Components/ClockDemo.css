@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    background-color: black; 
+}
+
+.clock {
+    width: 440px;
+    height: 440px;
+    background-color:rgb(40,40,40);
+    border-radius: 50%;
+    margin-left: 33%;
+    margin-top: 5%;
+    border: 5px solid rgb(64,64,64);
+    box-shadow: 0px 0px 20px rgb(40,40,40),0px 0px 20px rgb(40,40,40);
+    position: relative;
+}
+
+.clock .hand{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 8px;
+    height: 40%;
+    border-radius: 50%;
+    transform-origin: bottom;
+    background-color: black;
+    transform: translatex(-50%) rotate(50deg);
+}
+.clock .hand.minute{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 5px;
+    height: 40%;
+    transform-origin: bottom;
+    background-color: rgb(16,16,16);
+    transform: translatex(-50%) rotate(0deg);
+}
+.clock .hand.second{
+    
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 1px;
+    height: 40%;
+    transform-origin: bottom;
+    background-color:red;
+    transform: translatex(-50%) rotate(6deg);
+}
+.clock .hand.hour{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 10px;
+    height: 30%;
+    transform-origin: bottom;
+    background-color: black;
+    transform: translatex(-50%) rotate(300deg);
+}
+.clock .number{
+    font-size: 25px;
+    font-family: cursive;
+}
+.clock .number.number1{
+    position: absolute;
+    background-color:rgb(40,40,40);
+    font-weight: bold;
+    margin-top: 1%;
+    margin-left: -3.5%;
+    
+}
+.clock .number.number2{
+    position: absolute;
+    background-color:rgb(40,40,40);
+    font-weight: bold;
+    margin-top: 47%;
+    margin-left: 45%;
+}
+.clock .number.number3{
+    position: absolute;
+    background-color:rgb(40,40,40);
+    font-weight: bold;
+    margin-top: 91%;
+    margin-left: -2%;
+}
+.clock .number.number4{
+    position: absolute;
+    background-color:rgb(40,40,40);
+    font-weight: bold;
+    margin-top: 47%;
+    margin-left: -48%;
+}
+
